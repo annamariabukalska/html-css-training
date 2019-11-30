@@ -1,0 +1,39 @@
+html, body {
+    margin:0;
+    padding: 0;
+    font-family: Arial;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+section{
+    width: 5vw;
+    height: 5vw;
+    background: black;
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+section:hover{
+    background: orange;
+
+}
+
+section:hover ~ main{
+    left: 0;
+}
+
+main{
+    width:100vw;
+    height: 100vh;
+    background: green;
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    transition: .3s ease-in-out;
+}

@@ -1,0 +1,54 @@
+html, body { 
+    margin:0; 
+    padding: 0; 
+    font-family: Arial; 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+main{
+    display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+h1{
+    font-size: 3rem;
+}
+article{
+    color: blue;
+    animation:moveAround 3s infinite ease;
+    
+}
+
+@keyframes moveAround{
+   0%{
+       transform: translateX(0) translateY(0) scale(1);
+   }
+   20%{
+    transform: translateX(-100px) translateY(20px) scale(4);
+    }
+    50%{
+    transform: translateX(-200px) translateY(200px) scale(1);
+    } 
+    80%{
+    transform: translateX(-100px) translateY(-200) scale(1.2);
+    }  
+    100%{
+    transform: translateX(-120px) translateY(-20px) scale(4);
+    }
+}
+
+@keyframes basic{
+ from{
+     color: #53d648;
+     transform: scale(1);
+ }
+ to{
+     color: bisque;
+     transform: scale(2);
+ }
+}

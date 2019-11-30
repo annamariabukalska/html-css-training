@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+*{
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+main {
+    display:grid;
+    gap:1rem;
+    padding:1rem;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: center;
+    justify-content: end;
+    justify-content: space-evenly;
+
+    min-height:100vh;
+    align-items: end;
+    align-items:start;
+    align-items: center;
+  }
+
+  main section{
+      background: #4285f4;
+      height: 100px;
+      width: 100px;
+
+      border-radius: 50%;
+      display: grid;
+      grid-auto-flow: column;
+      place-items: center;
+  }
+  
+
+ 

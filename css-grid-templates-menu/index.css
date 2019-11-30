@@ -1,0 +1,50 @@
+html, body {
+    margin:0;
+    padding: 0;
+    font-family: Arial, 'Open Sans';
+    background: #eee;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: fixed;
+    width: 100vw;
+    padding: 4rem;
+    background: white;
+    min-height: 20vh;
+
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+
+}
+
+main{
+    display: grid;
+    gap:.2rem;
+    padding: .2rem;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 200px 500px;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr;
+}
+main section{
+    color: white;
+    min-width: 100px;
+    min-height: 100px;
+    background: green;
+    display: grid;
+    place-items: center;
+    
+}
+
+main section:nth-of-type(){
+    background: white;
+    
+}

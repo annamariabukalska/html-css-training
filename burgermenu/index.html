@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burgermenu</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+
+    <nav class="menu">
+    <a class="menuitem" href="#section1">Home</a>
+    <a class="menuitem" href="#section2">About</a>
+    <a class="menuitem" href="#section3">Profile</a>
+    </nav>
+
+    <main>
+        <section  id="section1">Home</section>
+        <section  id="section2">About</section>
+        <section  id="section3">Profile</section>
+    </main>
+    <script>
+    document.querySelector('.menu').addEventListener('click', doStuff)
+
+    function doStuff(){
+        document.querySelector('#checkbox').checked=false; 
+    }
+    </script>
+</body>
+</html>
+
+
+    <!----->

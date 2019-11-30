@@ -1,0 +1,32 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main {
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: 2fr 4fr 2fr 4fr;
+    grid-template-rows: 4fr 2fr 4fr 2fr;
+    
+    
+}
+
+main .section{
+    background:#4285F4;
+    display: grid;
+    /*place-items: center;*/
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;    
+}
+
+
